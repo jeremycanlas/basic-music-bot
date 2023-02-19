@@ -5,6 +5,22 @@ A basic music bot based on the tutorial https://www.youtube.com/watch?v=dRHUW_Kn
 Some changes I have made:
 1) Migrated to nextcord
 2) I modified it so that music_queue is unique to each server instead of sharing the same queue as well as being able to play music in different servers all at once. 
+
+    Specifically in the function play_music:
+    
+    ```
+	async def play_music(self):
+      # stuff
+      if self.vc == None or not self.vc.is_connected():
+	```
+    I changed it to
+    ```
+    async def play_music(self):
+      # stuff
+      voice_client = nextcord.utils.get(self.bot.voice_clients, guild=ctx.guild)
+      if self.vc == None or not voice_client:
+    ```
+
 3) Migrated from youtube_dl to yt-dlp because of some issues I was facing with youtube_dl https://github.com/yt-dlp/yt-dlp.
 4) The bot also uses azapi https://github.com/elmoiv/azapi to get the lyrics of the currently played song. Need better exception handling.
 
