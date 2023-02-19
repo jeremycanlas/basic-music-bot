@@ -19,4 +19,4 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
 #   await bot.change_presence(activity=nextcord.Game(name="on " + str(len(bot.guilds)) + " Servers", type=0))
 
-bot.run(os.getenv("WINTER_TOKEN"))
+bot.run(os.getenv("TOKEN"))
