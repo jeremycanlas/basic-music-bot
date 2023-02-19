@@ -9,7 +9,7 @@ Some changes I have made:
 4) The bot also uses azapi https://github.com/elmoiv/azapi to get the lyrics of the currently played song. Need better exception handling.
 
 ---
-## WIP
+## WIP How to create a bot
 1) Click on **New Application** at the upper right corner and name your application anything you want in https://discord.com/developers/applications.
 
 
@@ -20,7 +20,7 @@ Some changes I have made:
     
     ![image](https://user-images.githubusercontent.com/80456535/219930044-8bec56ff-5a79-4151-b50e-63c0db3936f7.png)
 
-## Important
+## How to run the bot
 1) Create a python virtual environment `virtualenv .venv` and go into your virtual environment `.venv\Scripts\activate`
 2) Install dependencies `pip install -r requirements.txt`
 3) Create a `.env` file in your main project directory and add your bot token there
