@@ -43,5 +43,5 @@ Some changes I have made:
 
     Example:
     `TOKEN=123412-0391203token120348129083`
-4) 
+4) run `python main.py` in your terminal
 
